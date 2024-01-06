@@ -1,15 +1,10 @@
 import './App.css'
-import SongsList from './SongsList'
-import Header from './Header'
-import Footer from './Footer'
+import Layout from './components/Layout'
+
 
 function App() {
   return (
-    <>
-      <Header />
-      <SongsList />
-      <Footer />
-    </>
+    <Layout />
   )
 }
 

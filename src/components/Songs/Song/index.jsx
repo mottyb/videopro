@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import ReactPlayer from 'react-player/youtube'
 
+
 const Fetch = () => {
   const [posts, setPosts] = useState([]);
   useEffect(() => {
@@ -13,10 +14,15 @@ const Fetch = () => {
         setPosts(data);
       });
   }, []);
+  
+function saveData(posts){
+  localStorage.setItem("post", JSON.stringify("posts"))
+}
+
+
   return (
     <>
       {posts.map((post) => (
-
         <div className='song'>
         <ReactPlayer
   url={post.acf.url}
@@ -31,12 +37,14 @@ const Fetch = () => {
       <b>Artist:</b> {post.acf.artist} <br></br>
       <b>Album:</b> {post.acf.album} <br></br>
       <b>Time:</b> {post.acf.time} 
-
-
-
+      <button className='saveit' onClick={saveData}>💓</button>
+  
          </div>
+         
       ))}
+
     </>
   );
 };
+
 export default Fetch;

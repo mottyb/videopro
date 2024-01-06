@@ -15,18 +15,19 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-.left {
+.left nav {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
 }
-.left  a {
+.left nav a {
     color: #fff;
     text-decoration: none;
     font-size: 20px;
     text-align: center;
+    padding: 0px 10px;
 }
 .center input {
     width: 400px;
@@ -63,4 +64,48 @@ body {
 }
 .logo img {
     width: 40px;
+}
+.footer {
+    height: 40px;
+    width: 100%;
+    background: #000;
+    text-align: center;
+    color: #fff;
+    line-height: 40px;
+}
+.saveit {
+    background: no-repeat;
+    border: none;
+    font-size: 24px;
+}
+.todo-list button {
+    margin: 0px 5px;
+    background: red;
+    color: #fff;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+.todo-list button:first-child {
+    background: green;
+}
+.PageSongs {
+    min-height: 80vh;
+}
+
+.PageSongs form {
+    text-align: center;
+}
+.todoit{
+    height: 50px;
+    width: 400px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 50px;
+}
+
+
+.todo-list li {
+    line-height: 24px;
+    font-size: 20px;
 }

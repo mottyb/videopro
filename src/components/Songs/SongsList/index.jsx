@@ -1,4 +1,4 @@
-import Song from './Song'
+import Song from '../Song'
 
 export default function SongsList() {
     return (
